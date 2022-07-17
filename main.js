@@ -19,7 +19,6 @@ modalContainer.addEventListener('click', function(event) {
     event.stopPropagation()
 })
 
-
 const clickSearch = document.querySelector('.js-search')
 const modalSearch = document.querySelector('.modal-search')
 const modalCloseSearch = document.querySelector('.modal-search')
@@ -67,3 +66,14 @@ menuClose.addEventListener('click', hideMenu)
 menuContainer.addEventListener('click', function(event) {
     event.stopPropagation()
 })
+
+const scrollHeader = document.querySelector('.js-scroll')
+const header2 = document.querySelector('.js-header2')
+
+
+function showScrollHeader() {
+    header2.classList.add('stuck') 
+}
+
+scrollHeader.addEventListener('scroll', showScrollHeader) 
+
