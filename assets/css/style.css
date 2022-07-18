@@ -729,6 +729,7 @@ body {
 .modal.open,
 .modal-search.open {
   display: flex;
+  z-index: 5;
 }
 .modal .modal-container,
 .modal-search .main-modal-search {
